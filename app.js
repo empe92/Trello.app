@@ -1,25 +1,26 @@
 const btn = document.querySelector("#reg");
-
-btn.addEventListener('click', function (){
-    document.querySelector("#form1").style.display = "flex";
-    document.querySelector("#form2").style.display = "none";
-})
-
 const btn2 = document.querySelector("#log");
-
-btn2.addEventListener('click', function (){
-    document.querySelector("#form2").style.display = "flex";
-    document.querySelector("#form1").style.display = "none";
-})
-
+const registerForm = document.querySelector("#form1")
+const loginForm = document.querySelector("#form2")
 const clos1 = document.querySelector("#close1");
-
-clos1.addEventListener('click', function(){
-    document.querySelector("#form1",).style.display = "none";
-})
-
 const clos2 = document.querySelector("#close2");
 
+btn.addEventListener('click', function (){
+    registerForm.style.display = "flex";
+    loginForm.style.display = "none";
+})
+
+btn2.addEventListener('click', function (){
+    loginForm.style.display = "flex";
+    registerForm.style.display = "none";
+})
+
+
+clos1.addEventListener('click', function(){
+    registerForm.style.display = "none";
+})
+
+
 clos2.addEventListener('click', function(){
-    document.querySelector("#form2",).style.display = "none";
+    loginForm.style.display = "none";
 })
