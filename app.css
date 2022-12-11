@@ -15,6 +15,10 @@
     align-items: center;
 }
 
+#nav h1, p {
+    cursor: pointer;
+}
+
 #nav {
     display: flex;
     flex-direction: row;
@@ -33,6 +37,7 @@
     width: 260px;
     padding-left: 10px;
     height: 35px;
+    cursor: pointer;
 }
 
 ::placeholder {
@@ -46,6 +51,7 @@
     gap: 30px;
     margin-left: auto;
     align-items: center;
+    cursor: pointer;
 }
 
 
@@ -55,6 +61,7 @@
     display: inline-block;
     padding: 4px;
     margin-left: 8px;
+    cursor: pointer;
 }
 
 .down {
@@ -93,13 +100,14 @@
     font-weight: bold;
 }
 
-button {
+#plus {
     background: transparent;
     border: none;
     width: 20px;
+    cursor: pointer;
 }
 
-button:hover, h4:hover {
+#plus:hover, h4:hover {
     background-color: rgb(203, 233, 237);
     border-radius: 4px;
 }
@@ -107,4 +115,113 @@ button:hover, h4:hover {
 h4 {
     width: 270px;
     padding: 5px;
+    cursor: pointer;
+}
+
+#form1 {
+    background-color: rgb(244, 251, 251);
+    box-shadow:-1px 1px 5px grey;
+    width: 250px;
+    height: 160px;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    font-size: 15px;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    top: 60px;
+    right: 0;
+}
+#form2 {
+    background-color: rgb(244, 251, 251);
+    box-shadow:-1px 1px 5px grey;
+    width: 250px;
+    height: 160px;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+    font-size: 15px;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+
+#form1 input {
+    background-color: rgb(244, 251, 251);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 14px;
+    margin-top: 15px;
+    cursor: pointer;
+    padding-left: 3px;
+    width: 150px;
+}
+
+#form2 input {
+    background-color: rgb(244, 251, 251);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 14px;
+    margin-top: 15px;
+    cursor: pointer;
+    padding-left: 3px;
+    width: 150px;
+}
+
+
+
+.submit {
+    border-radius: 10px;
+    border: 1px black solid;
+    background-color: rgb(244, 251, 251);
+    padding: 2px;
+    width: 80px;
+    font-size: 12px;
+    margin-top: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form ::placeholder {
+    color:grey;
+}
+
+#close1 {
+    position: absolute;
+    right: 0;
+    margin-right: 5px;
+    top: 5px;
+    border: 1px black solid;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+#close2 {
+    position: absolute;
+    right: 0;
+    margin-right: 5px;
+    top: 5px;
+    border: 1px black solid;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transform: rotate(45deg);
 }

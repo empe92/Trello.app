@@ -7,7 +7,7 @@
     <title>Trello - HTML + CSS</title>
     <link rel="stylesheet" href="app.css">
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
-    <script src="app.js"></script>
+    
 </head>
 <body>
     <nav id="top">
@@ -19,8 +19,8 @@
         </div>
         <div id="login">
         <input type="text" name="search" id="search" placeholder="Search..">
-        <p>Register</p>
-        <p>Login</p>
+        <p id="reg">Register</p>
+        <p id="log">Login</p>
         </div>
     </nav>
 
@@ -43,7 +43,23 @@
             <p>There are no recently viewed boards.</p>
         </div>
     </div>
-    
-    
+    <form id="form1" class="form">
+        <p id="close1" >+</p>
+        <label for="email">Create an account</label>
+        <input type="email" id="email" name="email" placeholder="email">
+        <input type="password" id="pass" name="pass" placeholder="password">
+        <button class="submit">Submit</button>
+        
+    </form>
+
+    <form id="form2" class="form">
+        <p id="close2" >+</p>
+        <label for="email">Login</label>
+        <input type="email" id="email" name="email" placeholder="email">
+        <input type="password" id="pass" name="pass" placeholder="password">
+        <button class="submit">Submit</button>
+    </form>
+
+<script src="app.js"></script>
 </body>
 </html>
